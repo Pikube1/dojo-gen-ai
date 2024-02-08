@@ -1,5 +1,14 @@
 import React from "react"
+import AudioReactRecorder, { RecordState } from "audio-react-recorder"
 
 export const App = () => {
-  return <div>Ready to build your AI note taker ? Let's go 🚀🚀🔥</div>
+	const [recordState, setRecordState] = useState(null)
+
+	return(
+		<div>
+			<AudioReactRecorder state={recordState} />
+		</div>
+	)
 }
+
+
